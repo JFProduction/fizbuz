@@ -8,9 +8,9 @@ func TestFizBuz(t *testing.T) {
 		want string
 	}{
 		{1, ""},
-		{3, "fiz"},
-		{5, "buz"},
-		{15, "fiz buz"},
+		{3, "fizz"},
+		{5, "buzz"},
+		{15, "fizzbuzz"},
 	}
 
 	for _, c := range cases {
