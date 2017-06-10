@@ -7,15 +7,11 @@ import (
 func fizbuz(i int) string {
 	var str bytes.Buffer
 	if i%3 == 0 {
-		str.WriteString("fiz")
+		str.WriteString("fizz")
 	}
 
 	if i%5 == 0 {
-		if str.Len() == 0 {
-			str.WriteString("buz")
-		} else {
-			str.WriteString(" buz")
-		}
+		str.WriteString("buzz")
 	}
 
 	return str.String()
